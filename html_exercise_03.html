@@ -4,8 +4,145 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Exercise 3</title>
+    <style>
+        figure{
+            display: inline-block;
+            margin: 5;
+            padding: 0;
+            text-align: center;
+        }
+        figcaption{
+            font-size: smaller;
+        }
+        .center{
+            text-align: center;
+            margin: 0;
+            width: fit-content;
+        }
+        #floating-image {
+            position: absolute;
+            width: 200px;
+            height: auto;
+            pointer-events: none;
+        }
+        .random-text{
+            position: absolute;
+            color: #003249;
+            font-size: large;
+            pointer-events: none;
+        }
+        :focus{
+            outline: 2px solid blueviolet;
+        }
+    </style>
 </head>
-<body>
-    
+<body style="font-size: x-large; text-align: center; color: #0a5e84; background-color: rgb(229, 198, 159);">
+    <script>
+        window.onload=function(){
+            alert("Welcome. This is my output for HTML_Acticity_03. Francesca Paco - CC14 2G");
+        }
+    </script>
+    <header>
+        <p style="font-size: xx-large; color: #003249; font-family: fantasy; text-align: center;">
+            Hi! My name is Francesca, <br><br> I'm a student from <abbr title="University of the Corilleras">UC</abbr>.
+            <br><br>Learn more about me: 
+            <nav>
+                <a href="#Images" tabindex="0">Images</a><br>
+                <a href="#Map" tabindex="0">Map</a><br>
+                <a href="#Registration" tabindex="0">Registration</a><br>
+                <a href="#Socials" tabindex="0">Socials</a><br>
+                <a href="#ExternalStyleSheet" tabindex="0">Uhm</a><br>
+                <a href="#About" tabindex="0">About</a><br>
+            </nav>
+        </p>
+    </header>
+    <br><br><br>
+    <div id="Images">
+        <p>Here are images of my dogs.</p>
+        <figure tabindex="0" onclick="toggleFullscreen(this)">
+            <img src="htmlact3source/claire.jpg" alt="dog-claire" width="200">
+            <figcaption><abbr title="Photo by Francesca Paco; Nikon D610 Camera 2022">Claire</abbr></figcaption>
+        </figure>
+        <figure tabindex="0" onclick="toggleFullscreen(this)">
+            <img src="htmlact3source/chinky.jpg" alt="dog-chinky" width="200">
+            <figcaption><abbr title="Photo by Francesca Paco; Nikon D610 Camera 2022">Chinky</abbr></figcaption>
+        </figure>
+        <figure tabindex="0" onclick="toggleFullscreen(this)">
+            <img src="htmlact3source/chinky2.jpg" alt="dog-chinky2" width="200">
+            <figcaption><abbr title="Photo by Francesca Paco; Nikon D610 Camera 2022">Chinky</abbr></figcaption>
+        </figure>
+        <figure tabindex="0" onclick="toggleFullscreen(this)">
+            <img src="htmlact3source/chinky3.jpg" alt="dog-chinky3" width="200">
+            <figcaption><abbr title="Photo by Francesca Paco; Nikon D610 Camera 2022">Chinky</abbr></figcaption>
+        </figure>
+        <figure tabindex="0" onclick="toggleFullscreen(this)">
+            <img src="htmlact3source/choco.jpg" alt="dog-choco" width="200">
+            <figcaption><abbr title="Photo by Francesca Paco; Nikon D610 Camera 2022">Choco</abbr></figcaption>
+        </figure>
+        <figure tabindex="0" onclick="toggleFullscreen(this)">
+            <img src="htmlact3source/champ.jpg" alt="dog-champ" width="200">
+            <figcaption><abbr title="Photo by Francesca Paco; Nikon D610 Camera 2022">Champ</abbr></figcaption>
+        </figure>
+    </div>
+    <br><br><br>
+
+    <div id="Map">
+        <p>This is the map of <abbr title="Baguio City">where I live.</abbr></p>
+        <iframe src="https://maps.app.goo.gl/WitZknx7w2ntt8sL7" frameborder="10" width="600" height="450" allowfullscreen>
+        </iframe>
+    </div>
+    <br><br><br>
+
+    <div id="Registration">
+        <p>Registration Form<br>
+            --------------------------------------------------------------------------------------
+        </p>
+        <form action="#" method="post">
+            <label for="email" >Email Address</label>
+            <input type="email" id="email" name="email" pattern=".+@.+\..+" required tabindex="0"><br>
+        
+            <label for="">Contact Number</label>
+            <input type="tel" id="contact" pattern="[0-9]{11}" required tabindex="0"><br>
+        
+            <label for="date">Date</label>
+            <input type="date" id="date" required tabindex="0"><br>
+            <input type="submit" value="Submit" tabindex="0">
+        </form>
+        <p><br>--------------------------------------------------------------------------------------</p>
+    </div>
+
+    <div id="Socials">
+        <p>The twitter account I follow. @DeviantArt</p>
+        <blockquote class="twitter-tweet"><p lang="und" dir="ltr">&quot;Lake&quot; by pgminimalart <a href="https://t.co/UjbS6RLYwj">https://t.co/UjbS6RLYwj</a> <a href="https://t.co/VMbXu9td33">pic.twitter.com/VMbXu9td33</a></p>&mdash; DeviantArt (@DeviantArt) <a href="https://twitter.com/DeviantArt/status/1752731238329159887?ref_src=twsrc%5Etfw">January 31, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <a class="twitter"></a>
+        <blockquote class="twitter-tweet"><p lang="en" dir="ltr">&quot;Let it go..&quot; by MidnightLady9 <a href="https://t.co/TqVImZ7zui">https://t.co/TqVImZ7zui</a> <a href="https://t.co/IRAxLAS70G">pic.twitter.com/IRAxLAS70G</a></p>&mdash; DeviantArt (@DeviantArt) <a href="https://twitter.com/DeviantArt/status/1745498831586832693?ref_src=twsrc%5Etfw">January 11, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <blockquote class="twitter-tweet"><p lang="en" dir="ltr">&quot;Terrible Tilly&quot; by lifebytes <a href="https://t.co/sBwpC8AL87">https://t.co/sBwpC8AL87</a> <a href="https://t.co/fa4ZRjv0AD">pic.twitter.com/fa4ZRjv0AD</a></p>&mdash; DeviantArt (@DeviantArt) <a href="https://twitter.com/DeviantArt/status/1724830143489663003?ref_src=twsrc%5Etfw">November 15, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+    <br><br><br>
+
+    <!-- <div id="ExternalStyleSheet">
+        <p>External Style Sheet</p>
+    </div> -->
+    <br><br><br>
+
+    <div id="About">
+        <p>About</p>
+        <a href="resume.html" tabindex="0">This is my resume.</a>
+    </div>
+    <br><br><br>
+
+    <img id="floating-image" src="htmlact3source/hapapa.png" alt="Dog of Wisdom">
+    <script src="htmlact3source/htmlact3.js"></script>
+    <script>
+        function toggleFullscreen(element){
+            if(!document.fullscreenElement){
+                element.requestFullscreen().catch(err => {
+                    alert('Error');
+                });
+            }else{
+                document.exitFullscreen();
+            }
+        }
+    </script>
 </body>
 </html>
