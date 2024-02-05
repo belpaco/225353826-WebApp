@@ -4,37 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Exercise 3</title>
-    <style>
-        figure{
-            display: inline-block;
-            margin: 5;
-            padding: 0;
-            text-align: center;
-        }
-        figcaption{
-            font-size: smaller;
-        }
-        .center{
-            text-align: center;
-            margin: 0;
-            width: fit-content;
-        }
-        #floating-image {
-            position: absolute;
-            width: 200px;
-            height: auto;
-            pointer-events: none;
-        }
-        .random-text{
-            position: absolute;
-            color: #003249;
-            font-size: large;
-            pointer-events: none;
-        }
-        :focus{
-            outline: 2px solid blueviolet;
-        }
-    </style>
+    <link rel="stylesheet" href="htmlact3source/code/css/style.css">
 </head>
 <body style="font-size: x-large; text-align: center; color: #0a5e84; background-color: rgb(229, 198, 159);">
     <script>
@@ -60,27 +30,27 @@
     <div id="Images">
         <p>Here are images of my dogs.</p>
         <figure tabindex="0" onclick="toggleFullscreen(this)">
-            <img src="htmlact3source/claire.jpg" alt="dog-claire" width="200">
+            <img src="htmlact3source/images/claire.jpg" alt="dog-claire" width="200">
             <figcaption><abbr title="Photo by Francesca Paco; Nikon D610 Camera 2022">Claire</abbr></figcaption>
         </figure>
         <figure tabindex="0" onclick="toggleFullscreen(this)">
-            <img src="htmlact3source/chinky.jpg" alt="dog-chinky" width="200">
+            <img src="htmlact3source/images/chinky.jpg" alt="dog-chinky" width="200">
             <figcaption><abbr title="Photo by Francesca Paco; Nikon D610 Camera 2022">Chinky</abbr></figcaption>
         </figure>
         <figure tabindex="0" onclick="toggleFullscreen(this)">
-            <img src="htmlact3source/chinky2.jpg" alt="dog-chinky2" width="200">
+            <img src="htmlact3source/images/chinky2.jpg" alt="dog-chinky2" width="200">
             <figcaption><abbr title="Photo by Francesca Paco; Nikon D610 Camera 2022">Chinky</abbr></figcaption>
         </figure>
         <figure tabindex="0" onclick="toggleFullscreen(this)">
-            <img src="htmlact3source/chinky3.jpg" alt="dog-chinky3" width="200">
+            <img src="htmlact3source/images/chinky3.jpg" alt="dog-chinky3" width="200">
             <figcaption><abbr title="Photo by Francesca Paco; Nikon D610 Camera 2022">Chinky</abbr></figcaption>
         </figure>
         <figure tabindex="0" onclick="toggleFullscreen(this)">
-            <img src="htmlact3source/choco.jpg" alt="dog-choco" width="200">
+            <img src="htmlact3source/images/choco.jpg" alt="dog-choco" width="200">
             <figcaption><abbr title="Photo by Francesca Paco; Nikon D610 Camera 2022">Choco</abbr></figcaption>
         </figure>
         <figure tabindex="0" onclick="toggleFullscreen(this)">
-            <img src="htmlact3source/champ.jpg" alt="dog-champ" width="200">
+            <img src="htmlact3source/images/champ.jpg" alt="dog-champ" width="200">
             <figcaption><abbr title="Photo by Francesca Paco; Nikon D610 Camera 2022">Champ</abbr></figcaption>
         </figure>
     </div>
@@ -131,8 +101,8 @@
     </div>
     <br><br><br>
 
-    <img id="floating-image" src="htmlact3source/hapapa.png" alt="Dog of Wisdom">
-    <script src="htmlact3source/htmlact3.js"></script>
+    <img id="floating-image" src="htmlact3source/images/hapapa.png" alt="Dog of Wisdom">
+    <script src="htmlact3source/code/javascript/htmlact3.js"></script>
     <script>
         function toggleFullscreen(element){
             if(!document.fullscreenElement){

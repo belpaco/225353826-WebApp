@@ -8,7 +8,7 @@ function updateImagePosition(event) {
 }
 
 function generateRandomText() {
-    const texts = ['hapapa', 'hapa', 'pa', 'papa'];
+    const texts = ['hapapa', 'hapa', 'pa'];
     const randomIndex = Math.floor(Math.random() * texts.length);
     const randomText = texts[randomIndex];
 
