@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>Web Application Development</header>
+      <ul>
+        <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+        <li>
+          <a class="nav-link" href="#What_you_should_already_know"
+            >What you should already know</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Client_vs_Server">Client-side vs. Server-side Development</a>
+        </li>
+        <li><a class="nav-link" href="#Git">Git</a></li>
+        <li><a class="nav-link" href="#HTML_Elements">HTML Elements</a></li>
+        <li>
+          <a class="nav-link" href="#more_css">More on CSS</a>
+        </li>
+        <li><a class="nav-link" href="#linuxs">Windows Subsystem for Linux S</a></li>
+        <li><a class="nav-link" href="#Reference">Reference</a></li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <article>
+          <p>
+            Web Application Development is an in-depth exploration into the complicated world of structuring content in a logical and progressive way. It's an important course that covers core concepts and abilities required for creating dynamic and user-friendly web apps. As aspiring information technology developers, it is critical to understand the fundamentals of this field, since it serves as the foundation for current web development.
+          </p>
+          <ul>
+            <li>
+              HTML, or HyperText Markup Language, serves as the backbone of the web, providing the structure for web pages. It utilizes tags to define elements such as headings, paragraphs, images, and links, enabling browsers to interpret and display content accurately. HTML lays the foundation for web development, offering a standardized way to organize and present information on the internet.
+            </li>
+            <li>
+              CSS, short for Cascading Style Sheets, complements HTML by controlling the visual presentation of web pages. It allows developers to define styles such as colors, fonts, layouts, and animations, enhancing the aesthetics and usability of websites. CSS operates on a cascading principle, where styles can be inherited, overridden, or cascaded down from parent to child elements, providing flexibility and consistency in design.
+            </li>
+            <li>
+              JavaScript (JS) is a dynamic programming language that adds interactivity and functionality to web pages. It enables developers to create responsive and interactive elements such as forms, animations, and dynamic content updates. JavaScript can manipulate the HTML and CSS of a webpage in real-time, responding to user actions and events, making it an indispensable tool for creating engaging and interactive web experiences.
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="main-section" id="What_you_should_already_know">
+        <header>What You Should Already Know</header>
+        <article>
+          <p>Here's a short refresher of the basics in HTML5, CSS, and JavaScript:</p>
+          <ul>
+            <li>
+              HTML is the standard markup language used to create web pages. It consists of a series of elements, enclosed in tags, which structure the content of a webpage. The basic structure of an HTML document includes the &lt;!DOCTYPE html&gt; declaration, followed by the &lt;html&gt;, &lt;head&gt;, and &lt;body&gt; tags. Within the body, various elements such as headings (&lt;h1&gt; to &lt;h6&gt;), paragraphs (&lt;p&gt;), images (&lt;img&gt;), links (&lt;a&gt;), and lists (&lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;) are used to organize and present content. Attributes can be added to elements to provide additional information or functionality, such as the href attribute for links or the src attribute for images.
+            </li>
+            <li>
+              CSS is a style sheet language used to control the presentation and layout of HTML documents. It allows developers to define styles for elements such as colors, fonts, margins, padding, and positioning. CSS rules consist of a selector that targets HTML elements and a declaration block that specifies the styles to apply. Selectors can target elements based on their type, class, id, or relationship to other elements. Styles can be defined inline within HTML elements, in a &lt;style&gt; element within the document's &lt;head&gt;, or in an external CSS file linked to the HTML document using the &lt;link&gt; element.
+            </li>
+            <li>
+              JavaScript is a high-level, dynamic programming language primarily used for adding interactivity and behavior to web pages. It allows developers to manipulate the HTML and CSS of a webpage in real-time, respond to user actions and events, and dynamically update content without reloading the entire page. JavaScript code is typically embedded within HTML documents using &lt;script&gt; tags or included from external JavaScript files. It supports a wide range of features, including variables, data types, operators, control structures (such as loops and conditionals), functions, objects, arrays, and more. JavaScript is often used in conjunction with HTML and CSS to create rich, interactive web experiences.
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="main-section" id="Client_vs_Server">
+        <header>Client-side vs. Server-side Development</header>
+        <article>
+          <h2>
+            Client-Side Development:
+          </h2>
+          <ul>
+            <li><strong>Definition:</strong> Activities on the user's device (like a web browser) focusing on the interface and user experience.</li>
+            <li><strong>Technologies:</strong> HTML, CSS, JavaScript, plus frameworks like React or Angular.</li>
+            <li><strong>Responsibilities:</strong>
+              <ul>
+                <li>Structuring web pages (HTML)</li>
+                <li>Styling them (CSS)</li>
+                <li>Adding interactivity (JavaScript)</li>
+              </ul>
+            </li>
+            <li><strong>Advantages:</strong>
+              <ul>
+                <li>Quick and responsive interfaces</li>
+                <li>Less strain on servers</li>
+                <li>Dynamic user experience</li>
+              </ul>
+            </li>
+          </ul>
+
+          <h2>Server-Side Development:</h2>
+          <ul>
+            <li><strong>Definition:</strong> Activities on the web server managing data, requests, and server operations.</li>
+            <li><strong>Technologies:</strong> Languages like PHP, Python (Django), or JavaScript (Node.js).</li>
+            <li><strong>Responsibilities:</strong>
+              <ul>
+                <li>Data handling</li>
+                <li>Business logic</li>
+                <li>User authentication</li>
+                <li>Generating content</li>
+              </ul>
+            </li>
+            <li><strong>Advantages:</strong>
+              <ul>
+                <li>Better security</li>
+                <li>Centralized control</li>
+                <li>Scalability</li>
+              </ul>
+            </li>
+          </ul>
+
+          <h2>Interaction Between Client-Side and Server-Side:</h2>
+          <ul>
+            <li><strong>Communication:</strong> They talk through HTTP(S) using formats like JSON or XML.</li>
+            <li><strong>Workflow:</strong> Clients request, servers respond with data or actions.</li>
+          </ul>
+          
+          <h2>Full-Stack Development:</h2>
+          <ul>
+            <li><strong>Definition:</strong> Developers handling both client and server aspects.</li>
+            <li><strong>Responsibilities:</strong> Versatile skills, from interface design to server management.</li>
+          </ul>
+
+        </article>
+      </section>
+      <section class="main-section" id="Git">
+        <header>Git</header>
+        <article>
+          Git is a distributed version control system (DVCS) designed to track changes in source code during software development. It was created by Linus Torvalds in 2005 to manage the development of the Linux kernel but has since become widely adopted across various industries and projects. 
+          <h2>Installation</h2>
+          <ol>
+            <li>Go to the official Git website <a href="https://git-scm.com/">here</a>.</li>
+            <li>Download the appropriate version for your operating system (Windows, macOS, Linux).</li>
+            <li>Run the installer and follow the on-screen instructions.</li>
+            <li>During installation, you can choose the default settings or customize them according to your preferences.</li>
+            <li>Once the installation is complete, you can verify it by opening a terminal or command prompt and typing git --version. If Git is installed correctly, it will display the installed version.</li>
+          </ol>
+          <h2>Cloning a Repository</h2>
+          <ol>
+            <li>Open a terminal or command prompt.</li>
+            <li>Navigate to the directory where you want to clone the repository using the cd command.</li>
+            <i>ex. cd cc14 or cd &lt;directory&gt;</i>
+            <li>Copy the URL of the repository you want to clone from a platform like GitHub.</li>
+            <li>In the terminal, type git clone followed by the repository URL.</li>
+            <i>ex. git clone https://github.com/&lt;username&gt;/&lt;repository&gt;<br> or git clone https://github.com/belpaco/225353826-WebApp</i>
+            <li>Press Enter. Git will download the repository files to your local machine.</li>
+          </ol>
+          <h2>Basic Git Commands</h2>
+          <ul>
+            <li><strong>git init</strong>: Initializes a new Git repository in the current directory.</li>
+            <li><strong>git add &lt;file&gt;</strong>: Adds a file to the staging area, ready to be committed.</li>
+            <li><strong>git commit -m "commit message"</strong>: Commits the staged changes with a descriptive message.</li>
+            <li><strong>git status</strong>: Shows the status of files in the working directory and staging area.</li>
+            <li><strong>git push</strong>: Uploads local changes to the remote repository.</li>
+            <li><strong>git pull</strong>: Downloads changes from the remote repository to your local machine.</li>
+            <li><strong>git branch</strong>: Lists all branches in the repository.</li>
+            <li><strong>git checkout &lt;branch&gt;</strong>: Switches to the specified branch.</li>
+            <li><strong>git merge &lt;branch&gt;</strong>: Merges changes from the specified branch into the current branch.</li>
+            <li><strong>git log</strong>: Displays the commit history of the repository.</li>
+          </ul>
+        </article>
+
+      </section>
+      <section class="main-section" id="HTML_Elements">
+        <header>HTML Elements</header>
+        <h2>Text Elements</h2>
+        <ul>
+          <li><strong>&lt;p&gt;</strong> - paragraph</li>
+          <li><strong>&lt;h1&gt; to &lt;h6&gt;</strong> - headings</li>
+          <p><i><h1>h1</h1><h2>h2</h2><h3>h3</h3><h4>h4</h4><h5>h5</h5><h6>h6</h6></i></p>
+          <li><strong>&lt;a&gt;</strong> - anchor link</li>
+          <li><strong>&lt;strong&gt;</strong> - strong emphasis</li>
+          <li><strong>&lt;em&gt;</strong> - emphasis</li>
+          <li><strong>&lt;span&gt;</strong> - inline container</li>
+          <li><strong>&lt;pre&gt;</strong> - preformatted text</li>
+          <li><strong>&lt;code&gt;</strong> - inline code</li>
+          <li><strong>&lt;blockquote&gt;</strong> - block quotation</li>
+          <li><strong>&lt;cite&gt;</strong> - citation</li>
+          <li><strong>&lt;abbr&gt;</strong> - abbreviation</li>
+          <li><strong>&lt;q&gt;</strong> - short inline quotation</li>
+          <!-- <li><strong>&lt;&gt;</strong> - </li> -->
+        </ul>
+        <h2>Document Structure</h2>
+        <ul>
+          <li><strong>&lt;html&gt;</strong> - root element</li>
+          <li><strong>&lt;head&gt;</strong> - metadata</li>
+          <li><strong>&lt;title&gt;</strong> - document title</li>
+          <li><strong>&lt;body&gt;</strong> - document body</li>
+          <li><strong>&lt;div&gt;</strong> - division or section</li>
+          <li><strong>&lt;header&gt;</strong> - header section</li>
+          <li><strong>&lt;footer&gt;</strong> - footer section</li>
+          <li><strong>&lt;nav&gt;</strong> - navigation links</li>
+          <li><strong>&lt;main&gt;</strong> - main content area</li>
+          <li><strong>&lt;section&gt;</strong> - generic section</li>
+          <li><strong>&lt;article&gt;</strong> - article content</li>
+        </ul>
+        <h2>Lists</h2>
+        <ul>
+          <li><strong>&lt;ul&gt;</strong> - unordered list</li>
+          <li><strong>&lt;ol&gt;</strong> - ordered list</li>
+          <li><strong>&lt;li&gt;</strong> - list item</li>
+          <li><strong>&lt;dl&gt;</strong> - definition list</li>
+          <li><strong>&lt;dt&gt;</strong> - definition term</li>
+          <li><strong>&lt;dd&gt;</strong> - definition description</li>
+        </ul>
+        <h2>Tables</h2>
+        <ul>
+          <li><strong>&lt;table&gt;</strong> - defines a table</li>
+          <li><strong>&lt;thead&gt; &lt;tbody&gt; &lt;tfoot&gt;</strong> - table sections</li>
+          <li><strong>&lt;tr&gt;</strong> - table row</li>
+          <li><strong>&lt;th&gt;</strong> - table header cell</li>
+          <li><strong>&lt;td&gt;</strong> - table data cell</li>
+          <li><strong>&lt;caption&gt;</strong> - table caption</li>
+        </ul>
+        <h2>Forms</h2>
+        <ul>
+          <li><strong>&lt;form&gt;</strong> - form container</li>
+          <li><strong>&lt;input&gt;</strong> - input control</li>
+          <li><strong>&lt;button&gt;</strong> - button</li>
+          <li><strong>&lt;select&gt;</strong> - dropdown list</li>
+          <li><strong>&lt;option&gt;</strong> - option within a select</li>
+          <li><strong>&lt;textarea&gt;</strong> - text area</li>
+          <li><strong>&lt;label&gt;</strong> - form label</li>
+          <li><strong>&lt;fieldset&gt;</strong> - group of form controls</li>
+          <li><strong>&lt;legend&gt;</strong> - caption for a fieldset</li>
+        </ul>
+        <h2>Multimedia</h2>
+        <ul>
+          <li><strong>&lt;img&gt;</strong> - image</li>
+          <li><strong>&lt;video&gt;</strong> - video</li>
+          <li><strong>&lt;audio&gt;</strong> - audio</li>
+          <li><strong>&lt;iframe&gt;</strong> - embed external content</li>
+          <li><strong>&lt;embed&gt;</strong> - embed multimedia content</li>
+        </ul>
+        <h2>Miscellaneous</h2>
+        <ul>
+          <li><strong>&lt;hr&gt;</strong> - horizontal rule</li>
+          <li><strong>&lt;br&gt;</strong> - line break</li>
+          <li><strong>&lt;meta&gt;</strong> - metadata</li>
+          <li><strong>&lt;style&gt;</strong> - embedded CSS styles</li>
+          <li><strong>&lt;script&gt;</strong> - embedded JavaScript</li>
+        </ul>
+      </section>
+
+      <section class="main-section" id="more_css">
+        <header>More on Cascading Style Sheets</header>
+        <article>
+          <h2>CSS Style Rules</h2>
+          <h3>Selectors</h3>
+          <p><strong>Definition:</strong> Selectors target HTML elements to which the styles will be applied.</p>
+          <p><strong>Examples:</strong> <code>body</code> targets the &lt;body&gt; element. <code>.classname</code> targets elements with a specific class name
+            <code>#id</code> targets elements with a specific ID.</p>
+            
+          <h3>Properties and Values</h3>
+          <p><strong>Definition:</strong> Properties define the aspect of the element to be styled, while values specify the style's characteristics.</p>
+          <p><strong>Examples:</strong> <code>color: red;</code> sets the text color to red. <code>font-size: 16px;</code> sets the font size to 16 pixels
+            <code>background-color: #FFFFFF;</code> sets the background color to white.</p>
+
+          <h3>Declaration Block</h3>
+          <p><strong>Definition:</strong> A group of one or more property-value pairs enclosed within curly braces {}.</p>
+          <pre>
+            <code>h1 {
+              color: blue;
+              font-size: 24px;}
+            </code>
+          </pre>
+          <p>This declaration block styles &lt;h1&gt; elements with blue text and a font size of 24 pixels.</p>
+
+          <p><strong>Selectors:</strong>Explanation of various types of selectors and their usage.</p>
+          <p><strong>Units:</strong>Explanation of different units used in CSS (px, %, em, rem, etc.)</p>
+          <p><strong>Inheritance:</strong>Explanation of how styles are inherited from parent elements.</p>
+          <p><strong>Cascade:</strong>Explanation of how multiple style rules are applied to an element.</p>
+        </article>
+      </section>
+
+      <section class="main-section" id="linuxs">
+        <header>Windows Subsystem for Linux S</header>
+        <article>
+          <table>
+            <tr>
+              <th>Commands</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <th>wsl --install</th>
+              <th>installs Linux on your computer</th>
+            </tr>
+            <tr>
+              <th>wsl</th>
+              <th></th>
+            </tr>
+            <tr>
+              <th>logout or exit</th>
+              <th>returns to command prompt in windows</th>
+            </tr>
+            <tr>
+              <th>clear</th>
+              <th>clears the terminal screen</th>
+            </tr>
+            <tr>
+              <th>Apache Commands</th>
+              <th></th>
+            </tr>
+            <tr>
+              <th>sudo apt upgrate</th>
+              <th>updates Linux before installation of Apache</th>
+            </tr>
+            <tr>
+              <th>sudo apt update</th>
+              <th>upgrades Linux</th>
+            </tr>
+            <tr>
+              <th>sudo apt-get install apache2</th>
+              <th>installs Apache server</th>
+            </tr>
+            <tr>
+              <th>sudo service apache2 start</th>
+              <th>starts Apache server</th>
+            </tr>
+            <tr>
+              <th>sudo service apache2 stop</th>
+              <th>stops Apache server</th>
+            </tr>
+            <tr>
+              <th>Apache Setup</th>
+              <th></th>
+            </tr>
+            <tr>
+              <th>sudo nano</th>
+              <th>opens text editor</th>
+            </tr>
+            <tr>
+              <th>sudo chown -R username path/to/working/directory</th>
+              <th>make folder writable</th>
+            </tr>
+            <tr>
+              <th>sudo nano /etc/apache2/sites-available/000-default.conf</th>
+              <th>enable site<br>look for document root and change it to your desirable folder to run in localhost</th>
+            </tr>
+            <tr>
+              <th>sudo systemctl status apache2</th>
+              <th>check if Apache is running</th>
+            </tr>
+            <tr>
+              <th>sudo systemctl restart apache2</th>
+              <th>restarts Apache <br>*You need this every time you change document root. Then refresh your browser to update the output.*</th>
+            </tr>
+          </table>
+        </article>
+      </section>
+      <section class="main-section" id="Reference">
+        <header>Reference</header>
+        <article>
+          <ul>
+            <li>
+              All the documentation in this page is taken from <a href="https://primusr.notion.site/Web-Application-Development-c213cf6dbd834f6f8bcc2d02746209db"target="_blank">MDN</a>
+            </li>
+          </ul>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
